@@ -1,0 +1,28 @@
+#NakhimovSquare>.object_block>.object_image{
+	background-image:url('/wp-content/uploads/2019/11/nahimka_preview.jpg');
+}
+#SunkenShips>.object_block>.object_image{
+	background-image:url('/wp-content/uploads/2019/11/sailors_preview.jpg');
+}
+#Bas>.object_block>.object_image{
+	background-image:url('/wp-content/uploads/2019/11/fire_preview.jpg');
+}
+#Theater>.object_block>.object_image{
+	background-image:url('/wp-content/uploads/2019/11/theater_preview.jpg');
+}
+#SoldierAndSailor>.object_block>.object_image{
+	background-image:url('/wp-content/uploads/2019/11/soldiers_preview.jpg');
+}
+#Friendshousehostel>.object_block>.object_image{
+    background-image:url('/wp-content/uploads/2019/11/friends_preview.jpg');
+}
+#legoClass>.object_block>.object_image{
+    background-image:url('/wp-content/uploads/2019/11/legoclass_preview.jpg');
+}
+
+#object_description_desc p{
+    font-size:17px;
+}
+#object_description_mob p{
+    font-size:17px;
+}

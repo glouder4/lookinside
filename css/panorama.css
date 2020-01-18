@@ -1,0 +1,46 @@
+      #panolens-separate-container {
+        position: absolute;
+        width: 300px;
+        height: 125px;
+        right: 0;
+        top: 100px;
+      }
+
+      #panolens-separate-container:-webkit-full-screen{
+        left: 0;
+        top: 0;
+      }
+      #panolens-separate-container:-moz-full-screen{
+        left: 0;
+        top: 0;
+      }
+      #panolens-separate-container:-ms-fullscreen{
+        left: 0;
+        top: 0;
+      }
+      #panolens-separate-container:fullscreen {
+        left: 0;
+        top: 0;
+      }
+	  
+	  #description{
+		  margin-top:55px;
+		  min-height:175px;
+		  background-color:#fff;
+		  padding-top:15px;
+		  padding-bottom:15px;
+		  padding-left:35px;
+		  padding-right:35px;
+	  }
+	  #organization_name{
+		  text-align:left;
+	  }
+	  
+	  .pano-wrap .pnlm-container{
+	      margin:0;
+	  }
+	  
+	  
+	  
+	  
+	  
