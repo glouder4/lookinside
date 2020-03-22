@@ -28,7 +28,7 @@
             </script>
             <noscript><div><img src="https://mc.yandex.ru/watch/56231965" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             <!-- /Yandex.Metrika counter -->
-    <meta name="publisher-url" content="http://3dlookinside.ru">
+    <meta name="publisher-url" content="">
     <meta name="ROBOTS" content="all">
     <meta http-equiv="pragma" content="no-cache">
 	<meta charset="utf-8" />
@@ -41,13 +41,13 @@
 
 <body>
   <nav class="navbar pr-0 pt-1 pl-0 pr-md-2 pl-md-2 pr-lg-2 pl-g-2 pr-xl-2 pl-xl-2 row m-0">
-  <a class="navbar-brand pl-0 col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 text-left" href="http://3dlookinside.ru/"><div id="logo_brand"><h1>LOOKINSIDE</h1><h2>3D ТУРЫ ПО ГОРОДУ</h2></div></a>
+  <a class="navbar-brand pl-0 col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 text-left" href="/"><div id="logo_brand"><h1>LOOKINSIDE</h1><h2>3D ТУРЫ ПО ГОРОДУ</h2></div></a>
   <div id="city_weather" class="col-6 col-sm-6 col-md-5 col-lg-5 col-xl-5 text-right" style="font-size:15px;font-weight:100;">
       <?php echo (new DateTime('now', new DateTimeZone('Europe/Moscow')))->format('H:i'); ?>
   </div>
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-      <a href="http://3dlookinside.ru/contacts" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Контакты</a>
-      <a href="http://3dlookinside.ru/com-request" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0" style="margin-left:15px">Владельцам заведений</a>
+      <a href="/contacts" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Контакты</a>
+      <a href="/com-request" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0" style="margin-left:15px">Владельцам заведений</a>
       </div>
 </nav>
 

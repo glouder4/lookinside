@@ -14,11 +14,11 @@
 ?>
 	<footer class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-dark">
 		<div id="small_brandname" class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3"><h6>LOOKINSIDE, 2019</h6></div>
-		<a href="http://3dlookinside.ru/contacts" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Контакты</a>
-		<a href="http://3dlookinside.ru/about-us" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">О нас</a>
-		<a href="http://3dlookinside.ru/com-request" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Владельцам заведений</a>
-		<a href="http://3dlookinside.ru/rieltor" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Риелторам</a>
-		<a href="http://3dlookinside.ru/vakansii" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Вакансии</a>
+		<a href="/contacts" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Контакты</a>
+		<a href="/about-us" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">О нас</a>
+		<a href="/com-request" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Владельцам заведений</a>
+		<a href="/rieltor" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Риелторам</a>
+		<a href="/vakansii" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Вакансии</a>
 		 <!-- Yandex.Metrika informer -->
             <a href="https://metrika.yandex.ru/stat/?id=56231965&amp;from=informer"
             target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/56231965/3_0_FFAF4FFF_EF8F2FFF_0_pageviews"
