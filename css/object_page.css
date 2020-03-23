@@ -1,0 +1,21 @@
+#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container{
+	width:100%;
+	display: flex;
+}
+@media (max-width: 768px){
+	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container>.pano-wrap{
+	    -ms-flex-order: 1;
+	    order: 1;
+	}
+}
+@media (min-width: 768px){
+	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container>.pano-wrap{
+		width: 75%!important;
+	    -ms-flex-order: 2;
+	    order: 2;
+	}
+	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container>p{
+		width:25%!important;
+	}
+}
+#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container

@@ -1,222 +1,97 @@
-
-    body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-		font-family: 'Vollkorn', sans-serif;
-		background-color:rgba(232,232,232,0.4);
-		outline: none;
-      }
-      body>.col-lg-9{
-		  margin-top:5px;
-		  padding:0;
-	  }
-/* * {
-  border: 1px solid #f00; }*/
-/*--------------------------------------- Шапка --------------------------------- */
-	  body>.navbar{
-		  height:135px;
-		  background-color: rgba(225,94,56);
-		  color: rgba(205,218,247);
-	  }
-	  body>.navbar>.navbar-brand{
-		  color: rgba(205,218,247);
-		  text-align:center;
-		  outline: none;
-	  }
-	  #main_content>.col-12>.col-12>.object_name{
-	      font-size:27px;
-	  }
-	  #logo_brand{
-		  width:218px;
-		  height:75px;
-		  text-align:center;
-	  }
-	  body>.navbar>.navbar-brand>#logo_brand>h1{
-		   margin-bottom:0;
-		   font-weight: normal;
-		   margin-top:2%;
-		   font-size: 1.75rem;
-	   }
-	  body>.navbar>.navbar-brand>#logo_brand>h2{
-		  font-size:12px;
-		  margin-top: 0;
-	  }
-	  body>.navbar>.col-12{
-	      border-top:1px solid silver;
-	  }
-	  body>.navbar>.col-12>a{
-	      font-size:16px;
-	      color:rgba(205,218,247);
-	      text-decoration:underline;
-	  }
-	  
-/*--------------------------------------- Вынести в отдельный файл карточек --------------------------------- */
-	  #Carousel img{
-	      width:100%;
-	      height:750px;
-	  }
-	  @media (max-width: 768px) {  
-	      #Carousel img{
-    	      width:100%;
-    	      height:350px;
-    	  }
-	  }
-	  #votes{
-	      height:25px;
-	  }
-	  .pano-wrap .pnlm-container{
-	      margin:0;
-	  }
-/*--------------------------------------- Панель навигации --------------------------------- */
-	  #navigation>.col-6>.col-12>a:focus{
-	         outline:none;
-	     }
-	     .navbar-collapse>ul>li>a:focus,.navbar-collapse>ul>li>.row>a:focus{
-	      outline:none;
-	  }
-      #navigation .nav-item>.m-0>input{
-          height:30px;
-          width:30px;
-      }
-	  #navigation>.col-6>button:hover,#navigation>.col-6>button:focus{
-	      background-color: rgba(225,94,56);
-	  }
-	   #navigation>.col-6>.col-12>a{
-	       width:100%;
-	   }
-	  #navigation>.col-6>.col-8,#navigation>.col-6>button{
-	      top:0;
-	      outline: none;
-	  }
-/*--------------------------------------- Название города --------------------------------- */
-	  #cityname{
-		  text-align:right;
-		  border-bottom:1px solid rgba(205,218,247);
-		  padding:0;
-		  font-weight: normal;
-	  }
-	  #cityname>h2{
-	      font-size: 1.75rem;
-	  }
-/*--------------------------------------- Объекты города --------------------------------- */
-	  .object_block>h5{
-	      font-weight:normal;
-	      font-size:17px;
-	  }
-	  .object_block>.col-lg-12>h6{
-	      font-weight:normal;
-	      font-size:20px;
-	  }
-	  .objects,
-	  .objects>.object_items,.objects>.object_items>.row>.object,
-	  .objects>.object_items>.row>.object>.object_block{
-		  padding:0;
-	  }
-	  .objects{
-		  text-align:left;		  
-		  margin-bottom:15px;
-	  }
-	  .objects>.object_items>.row>.object{
-		  text-align:center;
-		  height:100%;
-		  margin-bottom:5px;
-	  }
-	  .objects>.object_items>.row>.object>.object_block{
-		background-color:rgba(206,219,247);
-		padding:15px;
-		height:100%;
-		border-radius:12px;
-	  }
-	  .objects>.object_items>.row>.object>.object_block>.object_image{
-		background-color:#fff;
-		background-size: 100% 100%;
-		height:100px;
-	  }
-	  .object_block>.col-lg-12>button{
-	      height:40px;
-	      background-color:rgba(206,219,247);
-	      border-radius:12px;
-	      margin-top:15px;
-	      border:1px solid silver;
-	      padding:3px;
-	      font-size:17px;
-	      outline: none;
-	  }
-	  .object_block>.col-lg-12>button:hover{
-	      background-color: silver;
-	  }
-	  footer{
-		  padding:0;
-		  height:175px;
-		  color: rgba(205,218,247);
-	  }
-	  footer>a{
-	      font-size:12px;
-	  }
-	  #small_brandname{
-		  height:29px;
-		  padding:0;
-		  padding-top:3px;
-		  border-bottom:1px solid rgba(205,218,247);
-	  }
-	  #small_brandname>h6{
-		  margin-bottom:0.2px;
-		  font-size:19px;
-		  font-weight:550;
-	  }
-	  h6{
-	      margin-bottom:0;
-	  }
-	  #logo_desc,#logo_mobile{
-	      width:154px;
-	      height:75px;
-	      margin-left:17px;
-	      position:absolute;
-	      bottom:5px;
-	      z-index:100;
-	      opacity:0.7;
-	  }
-	  #com-request p{
-	      font-size:17px;
-	  }
-/*--------------------------------------- Смартфоны --------------------------------- */
-	  @media (max-width: 768px) { 
-	     #logo_desc,#logo_mobile{
-    	      width:75px;
-    	      height:35px;
-	      } 
-	   body>.navbar>.navbar-brand{
-	      margin-left:2%;
-	  }
-	  #navigation>.col-6>.col-12>a{
-	         font-size:12px;
-	     }
-	     #navigation .nav-item>.col-8>a,.nav-item>a{
-	         font-size:14px;
-	     }
-	  }
-/*--------------------------------------- Планшеты --------------------------------- */
-	  @media (min-width: 768px) {  
-         #navigation>.col-6>.col-12>a{
-	         font-size:14px;
-	     }
-	     #navigation .nav-item>.col-8>a,.nav-item>a{
-	         font-size:12px;
-	     }
-      }  
-      @media (min-width: 992px) { 
-         #navigation>.col-6>.col-12>.col-6>a{
-	         font-size:17px;
-	     }
-        }
-/*--------------------------------------- Ноутбуки и выше --------------------------------- */
-        @media (min-width: 1024px) { 
-         #navigation>.col-6>.col-12>.col-6>a{
-	         font-size:27px;
-	     }
-	     #navigation .nav-item>.col-8>a,.nav-item>a{
-	         font-size:21px;
-	     }
-        }
-	  
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+	background-color:rgba(232,232,232,0.4);
+	outline: none;
+  }
+#wpadminbar{
+	display: none;
+}
+/* Header */
+#pageHeader{
+	height:95px;
+	background-color: rgba(225,94,56);
+	color: rgba(205,218,247);
+}
+#pageHeader .site-title{
+	display: block;
+	font-size: 32px;
+}
+#pageHeader .site-description{
+	display: block;
+	font-size: 13px;
+}
+#pageHeader .site-title>a{
+	text-decoration: none;
+}
+#pageHeader .site-title>a,.main-navigation .main-menu > li > a{
+	color: rgba(205,218,247);
+}
+/* /Header */
+/* navigation */
+#navigation{		
+	padding: 15px;
+	padding-top: 0;
+	margin-left:0;
+	margin-right: 0;
+	margin-top: 15px;
+}
+#navigation_bar>ul>li>div>a{
+	font-size: 15px;
+	outline:none;
+}
+#navigation>div>div>a{
+font-size: 17px;
+color: black;
+}
+/* /navigation */
+/* content */
+#content{
+	min-height: 100vh;
+}
+main{
+	padding: 15px;
+}
+main h3{
+	font-size: 23px;
+}
+.object{
+	padding: 15px;
+	border: 1px solid rgba(205,218,247);
+	border-radius: 12px;
+}
+.object>header>h2{
+	font-size: 17px;
+	text-align: center;
+}
+.object>div>a{
+	height:40px;
+	background-color:rgba(206,219,247);
+	border-radius:12px;
+	margin-top:15px;
+	border:1px solid silver;
+	padding:3px;
+	font-size:17px;
+	outline: none;
+	text-decoration: none;
+	color: black;
+}
+.object>div>a:hover{
+  background-color: silver;
+}
+/* /content */
+/* footer */
+#awesomeweatherwidget-2{
+	display: none;
+}
+footer{
+	padding: 15px;
+	background-color: #090a0a!important;
+}
+footer>div,footer>div>a{
+	color:rgba(205,218,247);
+	display: block;
+	font-size: 12px;
+}
+/* /footer */

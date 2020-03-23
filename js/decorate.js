@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    
     if (window.location.pathname == '/'||window.location.pathname == '/simferopol/')
     {
-    $('.awesome-weather-wrap')[0].classList += ' d-none';
-    var temp = Math.round((parseInt($('.awesome-weather-current-temp')[0].firstChild.innerText)-32)/1.8);
-    $('#city_weather')[0].innerHTML += '<p class="m-0">температура: '+temp+'°</p>';
-   // $('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_wind')[0].innerText+'</p>';
-    $('#city_weather')[0].innerHTML += '<p class="m-0">погода: '+$('.awe_desc')[0].innerText+'</p>';
+        setTimeout(function(){
+            var temp = $('.awesome-weather-current-temp')[0].innerText;
+            $('#city_weather')[0].innerHTML += '<p class="m-0">температура: '+temp+'</p>';
+            $('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_wind')[0].innerText+'</p>';
+            $('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_humidty')[0].innerText+'</p>';
+        },1000)    
     }
     else if(window.location.pathname == '/about-us/' || window.location.pathname == '/com-request/'|| window.location.pathname == '/contacts/' ||window.location.pathname == '/vakansii/'){
         $('#city_weather')[0].classList += ' d-none';
@@ -80,7 +80,6 @@ $(document).ready(function(){
     }
     $('.rate1')[0].style.height = 16+'px';
     
-   $('.elementor-element')[14].style.marginBottom = 0;
    $('#count_of_votes')[0].innerHTML += ' <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left p-0"><h6>Голосов: '+$('.basic-stats-votes-number')[0].innerText +'</h6></div>';
    $('#count_of_votes_m')[0].innerHTML += ' <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 textleft p-0"><h6>Голосов: '+$('.basic-stats-votes-number')[0].innerText +'</h6></div>';
    
