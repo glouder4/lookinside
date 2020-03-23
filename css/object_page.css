@@ -3,9 +3,16 @@
 	display: flex;
 }
 @media (max-width: 768px){
+	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container{
+		display: 	block;
+	}
 	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container>.pano-wrap{
 	    -ms-flex-order: 1;
 	    order: 1;
+	    width: 	100%;
+	}
+	#main>article>.entry-content>.wp-block-group>.wp-block-group__inner-container>p{
+		width:100%!important;
 	}
 }
 @media (min-width: 768px){
