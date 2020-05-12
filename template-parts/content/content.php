@@ -8,10 +8,21 @@
  * @subpackage Twenty_Nineteen
  * @since 1.0.0
  */
-
+	$objectClasses = array(
+	'object',
+	'col-6',
+	'col-sm-6',
+	'col-md-4',
+	'col-lg-3',
+	'col-xl-3',
+	'ml-0',
+	'mr-auto',	
+	'align-self-center'
+	);
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class($objectClasses); ?>>
+	<?php twentynineteen_post_thumbnail(); ?>
 	<header class="entry-header">
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
@@ -24,36 +35,10 @@
 		endif;
 		?>
 	</header><!-- .entry-header -->
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+		<div class="btn">
+			<?php echo '<a href="'.get_permalink().'">Подробнее</a>' ?>	
+		</div>				
+	</div>
 
-	<?php twentynineteen_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentynineteen' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentynineteen' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php twentynineteen_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

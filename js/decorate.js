@@ -1,12 +1,63 @@
 $(document).ready(function(){
     if (window.location.pathname == '/'||window.location.pathname == '/simferopol/')
-    {
-        setTimeout(function(){
-            var temp = $('.awesome-weather-current-temp')[0].innerText;
-            $('#city_weather')[0].innerHTML += '<p class="m-0">температура: '+temp+'</p>';
-            $('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_wind')[0].innerText+'</p>';
-            $('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_humidty')[0].innerText+'</p>';
-        },1000)    
+    {           
+        var temp ='';
+        var icon ='';
+        moment.locale('ru'); 
+        var time = moment().tz("Asia/Yekaterinburg").format("DD.MM.YYYY HH:MM");
+        function getTimeNow(){
+            setTimeout(function(){     
+                $('#city_weather')[0].innerHTML = icon;
+                $('#city_weather')[0].innerHTML += '<p class="m-0 text-center">'+time+'</p>';
+                //$('#city_weather')[0].innerHTML += '<p class="m-0">температура: '+temp+'</p>';
+                //$('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_wind')[0].innerText+'</p>';
+                //$('#city_weather')[0].innerHTML += '<p class="m-0">'+$('.awe_humidty')[0].innerText+'</p>';
+                getTimeNow();
+            },2000) 
+        } 
+        function getWeather(){
+            setTimeout(function(){
+                temp= '<p class="ml-0 text-center">'+$('.awesome-weather-current-temp>strong')[0].innerText+'</p>';
+                icon= '<p class="ml-0 text-center">'+$('.awesome-weather-current-temp>strong>i')[0].outerHTML+'</p>';
+            },1200000)
+        }
+        setTimeout(function(){                
+            temp= '<p class="ml-0 text-center">'+$('.awesome-weather-current-temp>strong')[0].innerText+'</p>';
+            icon= '<p class="ml-0 text-center">'+$('.awesome-weather-current-temp>strong>i')[0].outerHTML+'</p>';           
+            getTimeNow();
+            getWeather();
+        },3000)         
+    }
+    else if((window.location.pathname == '/%d0%be%d0%b1%d1%8a%d0%b5%d0%ba%d1%82%d1%8b/')||(window.location.pathname == '/%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/')){
+        var flag = 0;
+		$('#navigation_town')[0].style.display = 'none';
+		$('#townButton').click(function(){
+			if($('#navigation_town')[0].style.display == 'none'){
+				$('#navigation_town').show();
+				console.log('1312');
+			}else{
+				$('#navigation_town').hide();
+				console.log('123');
+			}			
+		})
+        $('#navigationToggleButton').click(function(){
+            if(flag == 0){
+                flag = 1;
+                $('#navigationToggleButton>i').removeClass('fa-arrow-right');
+                $('#navigationToggleButton>i').addClass('fa-arrow-left');
+                $('#navigation').animate({
+                    marginLeft:0
+                },600)
+            } 
+            else{
+                flag = 0; 
+                $('#navigation').animate({
+                    marginLeft:'-310px'
+                },600)
+                $('#navigationToggleButton>i').removeClass('fa-arrow-left');
+                $('#navigationToggleButton>i').addClass('fa-arrow-right');              
+            }           
+        })
     }
     else if(window.location.pathname == '/about-us/' || window.location.pathname == '/com-request/'|| window.location.pathname == '/contacts/' ||window.location.pathname == '/vakansii/'){
         $('#city_weather')[0].classList += ' d-none';

@@ -7,7 +7,7 @@
  * @since 1.0.0
  */
 ?>
-<div class="site-branding">
+<div class="site-branding navbar-brand col-8 col-sm-8 col-md-3 col-lg-4 col-xl-2 ml-0 mr-0 p-0">
 
 	<?php if ( has_custom_logo() ) : ?>
 		<div class="site-logo"><?php the_custom_logo(); ?></div>
@@ -15,9 +15,9 @@
 	<?php $blog_info = get_bloginfo( 'name' ); ?>
 	<?php if ( ! empty( $blog_info ) ) : ?>
 		<?php if ( is_front_page() && is_home() ) : ?>
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center p-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php else : ?>
-			<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<p class="site-title col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 		<?php endif; ?>
 	<?php endif; ?>
 
@@ -25,23 +25,10 @@
 	$description = get_bloginfo( 'description', 'display' );
 	if ( $description || is_customize_preview() ) :
 		?>
-			<p class="site-description">
+			<p class="site-description col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="margin-top: -7px">
 				<?php echo $description; ?>
 			</p>
-	<?php endif; ?>
-	<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
-		<nav id="site-navigation" class="main-navigation" aria-label="<?php esc_attr_e( 'Top Menu', 'twentynineteen' ); ?>">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_class'     => 'main-menu',
-					'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	<?php endif; ?>
+	<?php endif; ?>	
 	<?php if ( has_nav_menu( 'social' ) ) : ?>
 		<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
 			<?php
