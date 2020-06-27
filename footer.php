@@ -12,18 +12,34 @@
  */
 
 ?>
-	<footer class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-dark">
-		<div id="small_brandname" class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3"><h6>LOOKINSIDE, 2019</h6></div>
-		<a href="/contacts" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Контакты</a>
-		<a href="/about-us" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">О нас</a>
-		<a href="/com-request" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Владельцам заведений</a>
-		<a href="/rieltor" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Риелторам</a>
-		<a href="/vakansii" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0">Вакансии</a>
-		 <!-- Yandex.Metrika informer -->
-            <a href="https://metrika.yandex.ru/stat/?id=56231965&amp;from=informer"
-            target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/56231965/3_0_FFAF4FFF_EF8F2FFF_0_pageviews"
-            style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" class="ym-advanced-informer" data-cid="56231965" data-lang="ru" /></a>
-            <!-- /Yandex.Metrika informer -->
+
+	</div><!-- #content -->
+	<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
+	<footer class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+		<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-0">
+			<div id="small_brandname" class="col-12 col-sm-3 col-md-12 col-lg-12 col-xl-12 p-0"><h6>LOOKINSIDE, <?php echo date ( 'Y' ) ; ?></h6></div>
+			<a href="/contacts">Контакты</a>
+			<a href="/about-us">О нас</a>
+			<a href="/com-request">Владельцам заведений</a>
+			<a href="/rieltor">Риелторам</a>
+			<a href="/vakansii">Вакансии</a>	
+		</div>			 
 	</footer>
+	<div id="ShareWidget" class="socialWidget pulse" data-target="html"><a href="#"><i class="fas fa-phone-alt"></i></a></div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" id="modal">	  
+	   <div class="col-md-5 mx-auto text-center">	   	
+	   	<?php echo do_shortcode( '[contact-form-7 id="6" title="Новая заявка"]'); ?> 
+	   </div>
+	</div>
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<!— VK Widget —>
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+//VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expanded: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
 </body>
 </html>
