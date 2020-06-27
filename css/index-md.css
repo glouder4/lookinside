@@ -1,0 +1,26 @@
+@media (max-width: 768px){
+	#main{
+		padding: 0;
+	}
+	#main>article>div>.col-12>.col-xl-10{
+		flex-basis: 100%!important;
+		margin: 0!important;
+		padding: 0!important;
+	}
+	#main>article>div>.col-12>.col-xl-2{
+		flex-basis: 100%!important;
+		max-width: 100%!important;
+	}
+}
+@media (min-width: 768px) and (max-width: 992px){
+	#feedbacklBlock>.col-12{
+		min-height:275px;
+	}
+	#feedbacklBlock>.p-0>div{
+		height: 275px!important;
+	}
+	#main>article>div>.col-12>.col-xl-10{
+		margin: 0!important;
+		padding: 0!important;
+	}
+}

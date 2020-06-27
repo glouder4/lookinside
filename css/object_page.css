@@ -3,8 +3,83 @@
 		height: 650px!important;
 	}
 }
+#panolens-separate-container>div>span:last-child{
+	background-size: 100%!important;
+	width:150px!important;
+	margin-left: 5px;
+    margin-bottom: 8px;
+}
+#panorama_preloader{
+	position: absolute!important;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+#main{
+	padding: 0;
+}
+#main>article>div>.col-12>.col-xl-10{
+	margin: 0!important;
+	padding: 0!important;
+	flex-basis: 75%;
+}
+#main>article>div>.col-12>.col-xl-2{
+	flex-basis: 25%;
+	max-width: 25%;
+}
+#main>article>div>.col-12>.col-xl-2>.rmp-widgets-container>.rmp-rating-widget>p:first-child{
+	line-height: 19px;
+    font-size: 110%;
+}
+#main>article>div>.col-12>.col-xl-10>.rmp-widgets-container>.rmp-rating-widget>p:first-child{
+	line-height: 19px;
+    font-size: 80%;
+}
+.st-effect-6.st-container {
+ perspective: 1500px;
+ perspective-origin: 0% 50%;
+}
+.st-effect-6 .st-pusher {
+ transform-style: preserve-3d;
+}
+.st-effect-6.st-menu-open .st-pusher {
+ transform: translate3d(300px, 0, 0);
+}
+.st-effect-6.st-menu {
+ transform: translate3d(-100%, 0, 0) rotateY(-90deg);
+ transform-origin: 100% 50%;
+ transform-style: preserve-3d;
+}
+.st-effect-6.st-menu-open .st-effect-6.st-menu {
+ visibility: visible;
+ transform: translate3d(-100%, 0, 0) rotateY(0deg);
+}
+#st-pusher{
+	width: 100%
+}
+#link-gallery-ow{
+	height: 20em;
+}
+.panoramaGallery_link_object{
+	margin-top: 5px;
+	padding:5px;
+}
+.panoramaGallery_link_object>.btn{
+	border:1px solid rgba(225,94,56);;
+}
+.panoramaGallery_link_object>.btn:hover,.panoramaGallery_link_object>.btn:focus{
+	background-color: transparent;
+}
+.tns-horizontal.tns-subpixel{
+	white-space: normal!important;
+}
 .wp-block-columns{
 	width: 100%;
+}
+#main>.row>.st-content{
+	min-height: 100vh;
+	overflow: auto;
 }
 .wp-block-column>ymaps:first-child{
 	width: 100%!important;
@@ -12,12 +87,26 @@
 #panolens-separate-container,#panolens-separate-container>canvas{
 	height:750px;
 }
+#filters{
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    padding: 6px;
+    background-color: rgba(225,94,56);
+}
+#link-gallery-mw{
+	position: absolute;
+}
 @media (max-width: 480px){
 	#panoramaBlock{
 		max-height:350px;
+		padding: 0;
 	}
-	#panolens-separate-container,#panolens-separate-container>canvas{
-		height: 100%!important;
+	#panolens-separate-container,#panorama_preloader{
+		height: 350px!important;
+	}
+	#panolens-separate-container>canvas{
+		height: 100%;
 	}
 }
 #vrLogo{
@@ -33,4 +122,6 @@
 #vrLogo>p{
 	margin-top: -5px;
 }
-#main>.container>article>.entry-content>.wp-block-group>.wp-block-group__inner-container
+#navigation>.navigationBar{
+	padding-left: 15px!important;
+}
